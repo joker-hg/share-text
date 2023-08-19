@@ -2,7 +2,6 @@ package org.example;
 
 import lombok.Data;
 
-import javax.management.monitor.StringMonitor;
 
 /**
  * projectName:org.example
@@ -16,8 +15,10 @@ import javax.management.monitor.StringMonitor;
 public class Teacher {
     private String name;
     private Integer age;
-
-    public void work(){
+    private String salary;
+    
+    public void work() {
         System.out.println("我在工作");
+        System.out.println(salary);
     }
 }
